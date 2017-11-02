@@ -11,9 +11,11 @@ Process:
 I've spent time on the documentation of what's available through the API located here: https://www.wunderground.com/weather/api/d/docs
 
 2. I decided it'd be fun to grab geolocation data, so I read about how to do that in Python. I like to understand what the code -does-, so I end up taking a little bit longer reading examples/ideas. I'd rather not be surprised by executing code. I opted to use this:
+```
     send_url = 'http://freegeoip.net/json'
     r = requests.get(send_url)
     j = json.loads(r.text)
+```
 Which grabs location based on IP. It's not the most accurate, but it's reasonable.
 
 3. I followed the tutorial to learn how to input information in Google Sheets. I wanted to be able to have it working before I build on that knowledge. Once that was set up, I went to their documentation and read more about it: http://gspread.readthedocs.io/en/latest/#main-interface
